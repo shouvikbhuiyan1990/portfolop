@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames/bind';
-import Image from './common/image';
+import ScrollAnimation from 'react-animate-on-scroll';
 import styles from './heroComponent.css';
 
 const cx = classNames.bind(styles);
@@ -9,11 +9,17 @@ const cx = classNames.bind(styles);
 const Hero = (props) => {
     return (
         <div className={cx('hero')}>
-            <Image
-                mobile={['https://via.placeholder.com/450x200']}
-                tablet={['https://via.placeholder.com/650x250']}
-                desktop={['https://via.placeholder.com/1350x550']}
-            />
+            <ScrollAnimation animateIn="fadeIn">
+                <div className={cx('hero-content')}>
+                    <img src="https://via.placeholder.com/350x350" alt="profile"></img>
+                    <p>Shouvik Bhuiyan</p>
+                    <ul>
+                        <li>Javascript Enthusiast</li>
+                        <li>Web Application Developer</li>
+                        <li>Full Stack</li>
+                    </ul>
+                </div>
+            </ScrollAnimation>
         </div>
     );
 }

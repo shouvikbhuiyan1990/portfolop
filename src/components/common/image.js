@@ -6,26 +6,29 @@ const Image = (props) => {
     const {
         mobile,
         tablet,
-        desktop
+        desktop,
+        className
     } = props;
 
     return (
-        <Picture
-            sources={[
-                {
-                    srcSet: `${mobile.join(',')}`,
-                    media: "(max-width: 420px)",
-                },
-                {
-                    srcSet: `${tablet.join(',')}`,
-                    media: "(max-width: 780px)",
-                },
-                {
-                    srcSet: `${desktop.join(',')}`,
-                    type: "image/webp"
-                }
-            ]}
-        />
+        <div className={className}>
+            <Picture
+                sources={[
+                    {
+                        srcSet: `${mobile.join(',')}`,
+                        media: "(max-width: 420px)",
+                    },
+                    {
+                        srcSet: `${tablet.join(',')}`,
+                        media: "(max-width: 780px)",
+                    },
+                    {
+                        srcSet: `${desktop.join(',')}`,
+                        type: "image/jpeg"
+                    }
+                ]}
+            />
+        </div>
     );
 };
 

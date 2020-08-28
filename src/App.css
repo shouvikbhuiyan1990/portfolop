@@ -7,10 +7,70 @@
   pointer-events: none;
 }
 
+@font-face {
+  font-family: 'roboto-light';
+  src: url('./fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: url('./fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'roboto-bold';
+  src: url('./fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'roboto-italic';
+  src: url('./fonts/Roboto-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'rocksalt';
+  src: url('./fonts/RockSalt-Regular.ttf');
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+body {
+  font-family: 'roboto-regular';
+  background-color: #DFDBDB;
+  color: #1D1D1B;
+}
+
+button {
+  padding: 16px 10px;
+  border: none;
+  background-color: #1D1D1B;
+  color: #fff;
+  font-family: 'roboto-bold';
+  font-size: 16px;
+}
+
+p, ul, li, body {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+:global(.heading) {
+  font-family: 'rocksalt';
+  padding: 20px 0;
+}
+
+:global(.reactComponent) {
+  padding: 20px 0;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .App-header {
@@ -28,11 +88,24 @@
   color: #61dafb;
 }
 
+img {
+  min-width: 100%;
+  max-width: 100%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :global(.reactComponent) {
+    padding: 20px 0;
+    width: 60%;
+    margin: 0 auto;
   }
 }

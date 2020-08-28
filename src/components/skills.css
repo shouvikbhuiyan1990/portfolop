@@ -1,0 +1,52 @@
+.skills ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills ul > li {
+    width: 25%;
+    padding: 2rem 0;
+}
+
+.skills ul > li i {
+    font-size: 40px;
+    margin: 0 10px;
+}
+
+.skills ul > li P {
+    padding: 15px 0;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.articles ul {
+    padding: 0 20px;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.articles ul li {
+    list-style: lower-latin;
+    padding: 15px 0;
+}
+
+a {
+    color: #358976;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .skills ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
