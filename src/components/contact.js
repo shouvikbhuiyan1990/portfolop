@@ -11,15 +11,19 @@ const Contact = () => {
         <ScrollAnimation animateIn="fadeIn">
             <div className={cx('reactComponent')}>
                 <p className={cx('heading')}>Drop Me a Note</p>
-                <ul>
-                    <li>Reactjs</li>
-                    <li>Nodejs</li>
-                    <li>Javascript</li>
-                    <li>React Native</li>
-                    <li>Flutter</li>
-                    <li>HTML5</li>
-                    <li>Css</li>
-                </ul>
+                <form>
+                    <div className={cx(styles.inputGroup)}>
+                        <input type="text" placeholder="First Name"/>
+                        <input type="text" placeholder="Last Name"/>
+                    </div>
+                    <div className={cx(styles.emailContainer)}>
+                        <input type="email" placeholder="Email Id"/>
+                    </div>
+                    <textarea placeholder="description"></textarea>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
             </div>
         </ScrollAnimation>
     );

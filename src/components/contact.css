@@ -1,0 +1,40 @@
+.inputGroup>input {
+    margin: 12px 0;
+    width: 100%;
+}
+
+.inputGroup>input:last-child {
+    margin-top: 0;
+    width: 100%;
+}
+
+.emailContainer input {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .inputGroup {
+        display: flex;
+    }
+    .inputGroup>input {
+        flex: 1;
+        margin: 12px 10px;
+    }
+    .inputGroup>input:first-child {
+        margin-left: 0;
+    }
+
+    .inputGroup>input:last-child {
+        margin-top: auto;
+    }
+    .inputGroup>input:last-child {
+        margin-right: 0;
+    }
+}

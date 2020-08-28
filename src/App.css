@@ -51,6 +51,15 @@ button {
   color: #fff;
   font-family: 'roboto-bold';
   font-size: 16px;
+  min-width: 200px;
+}
+
+input,
+textarea {
+  padding: 12px 10px;
+  border: 1px solid #1d1d1b;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 p, ul, li, body {
