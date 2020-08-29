@@ -14,9 +14,30 @@ const About = () => (
         <div className={`${cx(style.container)} ${cx('reactComponent')}`}>
             <p>{`Shouvik is a Bangalore based software developer. He has ${DIFF_DURATION.years()} Years and ${DIFF_DURATION.months()} Months of experince in interactive website and web application development`}</p>
             <ul className={cx(style.social)}>
-                <li className="fab fa-facebook"></li>
-                <li className="fab fa-linkedin"></li>
-                <li className="fab fa-github"></li>
+                <li>
+                    <a href="https://www.facebook.com/shouvik1/" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-facebook"></i>
+                    </a>
+                    <span>shouvik1</span>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/shouvik-bhuiyan/" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-linkedin"></i>
+                    </a>
+                    <span>shouvik-bhuiyan</span>
+                </li>
+                <li>
+                    <a href="https://github.com/shouvikbhuiyan1990/" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-github"></i>
+                    </a>
+                    <span>shouvikbhuiyan1990</span>
+                </li>
+                <li>
+                    <a href="mailto:shouvikbhuiyan1990@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <i className="fas fa-envelope"></i>
+                    </a>
+                    <span>shouvikbhuiyan1990@gmail.com</span>
+                </li>
             </ul>
         </div>
     </ScrollAnimation>

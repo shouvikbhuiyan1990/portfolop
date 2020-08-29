@@ -43,45 +43,45 @@ const Skills = () => {
                         <li>
                             <div className={cx(styles.iconContainer)}>
                                 <i className="fab fa-react"></i>
-                                <i class="fab fa-angular"></i>
-                                <i class="fab fa-vuejs"></i>
+                                <i className="fab fa-angular"></i>
+                                <i className="fab fa-vuejs"></i>
                             </div>
                             <p>JS Frameworks</p>
                         </li>
                         <li>
                             <div className={cx(styles.iconContainer)}>
-                                <i class="fab fa-html5"></i>
+                                <i className="fab fa-html5"></i>
                             </div>
                             <p>HTML</p>
                         </li>
                         <li>
                             <div className={cx(styles.iconContainer)}>
-                                <i class="fab fa-css3"></i>
-                                <i class="fab fa-less"></i>
-                                <i class="fab fa-sass"></i>
+                                <i className="fab fa-css3"></i>
+                                <i className="fab fa-less"></i>
+                                <i className="fab fa-sass"></i>
                             </div>
                             <p>CSS, LESS & SASS</p>
                         </li>
                         <li>
                             <div className={cx(styles.iconContainer)}>
-                                <i class="fas fa-desktop"></i>
-                                <i class="fas fa-mobile-alt"></i>
-                                <i class="fas fa-tablet-alt"></i>
+                                <i className="fas fa-desktop"></i>
+                                <i className="fas fa-mobile-alt"></i>
+                                <i className="fas fa-tablet-alt"></i>
                             </div>
                             <p>Responsive Designs</p>
                         </li>
                         <li>
                             <div className={cx(styles.iconContainer)}>
-                                <i class="fab fa-windows"></i>
-                                <i class="fab fa-apple"></i>
-                                <i class="fab fa-android"></i>
+                                <i className="fab fa-windows"></i>
+                                <i className="fab fa-apple"></i>
+                                <i className="fab fa-android"></i>
                             </div>
                             <p>Cross Platform, Flutter & React Native</p>
                         </li>
                         <li>
                             <div className={cx(styles.iconContainer)}>
-                                <i class="fas fa-database"></i>
-                                <i class="fab fa-jenkins"></i>
+                                <i className="fas fa-database"></i>
+                                <i className="fab fa-jenkins"></i>
                             </div>
                             <p>Database & Devops</p>
                         </li>
