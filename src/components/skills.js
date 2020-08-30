@@ -24,7 +24,7 @@ const Skills = () => {
 
     return (
         <ScrollAnimation animateIn="fadeIn">
-            <div className={`${cx('reactComponent')}`}>
+            <div className={`${cx('reactComponent')}`} id="skills">
                 <div className={cx(styles.skills)}>
                     <p className={cx('heading')}>Skills</p>
                     <ul>

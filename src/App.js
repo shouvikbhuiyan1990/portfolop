@@ -4,6 +4,7 @@ import About from './components/about';
 import Skills from './components/skills';
 import Career from './components/career';
 import Contact from './components/contact';
+import Footer from './components/footer';
 import './App.css';
 import "animate.css/animate.min.css";
 
@@ -15,6 +16,7 @@ function App() {
       <Skills />
       <Career />
       <Contact />
+      <Footer />
     </div>
   );
 }

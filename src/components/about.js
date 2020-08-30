@@ -11,7 +11,7 @@ const DIFF_DURATION = moment.duration(CURRENT_DATE.diff(INITIAL_DOJ));
 
 const About = () => (
     <ScrollAnimation animateIn="fadeIn">
-        <div className={`${cx(style.container)} ${cx('reactComponent')}`}>
+        <div className={`${cx(style.container)} ${cx('reactComponent')}`} id="about">
             <p>{`Shouvik is a Bangalore based software developer. He has ${DIFF_DURATION.years()} Years and ${DIFF_DURATION.months()} Months of experince in interactive website and web application development`}</p>
             <ul className={cx(style.social)}>
                 <li>

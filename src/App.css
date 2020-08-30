@@ -115,7 +115,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 968px) {
   :global(.reactComponent) {
     padding: 20px 0;
     width: 60%;

@@ -40,7 +40,7 @@ p {
     font-size: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 968px) {
     .social {
         flex-direction: row;
         justify-content: space-evenly;

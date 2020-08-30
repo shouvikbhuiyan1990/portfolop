@@ -10,7 +10,7 @@ const cx = classNames.bind(styles);
 const Career = () => {
     return (
         <ScrollAnimation animateIn="fadeIn">
-            <div className={`${cx('reactComponent')} ${cx(styles.career)}`}>
+            <div className={`${cx('reactComponent')} ${cx(styles.career)}`} id="career">
                 <p className={cx('heading')}>Career Graph</p>
                 <div className={cx(styles.centerContent)}>
                     <ul>
