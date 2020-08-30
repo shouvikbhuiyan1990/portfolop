@@ -17,9 +17,10 @@
     justify-content: center;
     flex-grow: 1;
     min-height: 350px;
-    background: #000 url(https://via.placeholder.com/650x200) no-repeat center / cover;
-    background-blend-mode: hard-light;
+    background: #012b4d url('../images/cover.jpg') no-repeat center / cover;
+    background-blend-mode: multiply;
     color: #fff;
+    background-size: auto;
 }
 
 .hero .hero-content {
@@ -31,23 +32,30 @@
 
 .hero-content p {
     font-family: 'roboto-bold';
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .hero-content ul {
     font-family: 'roboto-regular';
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .hero .hero-content ul {
     display: flex;
     margin: 0;
     padding: 0;
+    margin-top: 12px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero .hero-content ul li {
-    list-style: none;
-    margin: 0 10px;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.hero .hero-content ul li:last-child {
+    border: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -56,9 +64,27 @@
         flex-direction: column;
         justify-content: center;
         flex-grow: 1;
-        min-height: 350px;
-        background: #000 url(https://via.placeholder.com/1250x200) no-repeat center / cover;
-        background-blend-mode: hard-light;
-        color: #fff;
+        min-height: 400px;
+    }
+
+    .hero .hero-content ul {
+        flex-direction: row;
+    }
+
+    .hero .hero-content ul li {
+        padding: 0 10px;
+        border-right: 2px solid #fff;
+    }
+    
+    .hero .hero-content ul li:last-child {
+        border: none;
+    }
+
+    .hero-content p {
+        font-size: 26px;
+    }
+    
+    .hero-content ul {
+        font-size: 22px;
     }
 }

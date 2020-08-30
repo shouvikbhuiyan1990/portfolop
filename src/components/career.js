@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import ScrollAnimation from 'react-animate-on-scroll';
+import moment from 'moment';
 
 import styles from './career.css';
 
@@ -14,7 +15,7 @@ const Career = () => {
                 <div className={cx(styles.centerContent)}>
                     <ul>
                         <li>
-                            <span>2020</span>
+                            <span>{moment().year()}</span>
                             <span className={cx(styles.companyName)}>Publicis Sapient (Contd.)</span>
                         </li>
                         <li>

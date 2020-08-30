@@ -71,6 +71,10 @@ li {
   list-style: none;
 }
 
+p {
+  font-size: 16px;
+}
+
 :global(.heading) {
   font-family: 'rocksalt';
   padding: 20px 0;
@@ -116,5 +120,9 @@ img {
     padding: 20px 0;
     width: 60%;
     margin: 0 auto;
+  }
+
+  p {
+    font-size: 20px;
   }
 }
