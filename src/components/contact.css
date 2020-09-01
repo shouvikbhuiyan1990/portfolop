@@ -19,6 +19,15 @@ textarea {
     margin-bottom: 12px;
 }
 
+.srOnly {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden
+}
+
 @media screen and (min-width: 968px) {
     .inputGroup {
         display: flex;
@@ -27,10 +36,9 @@ textarea {
         flex: 1;
         margin: 12px 10px;
     }
-    .inputGroup>input:first-child {
+    .inputGroup>input.firstname {
         margin-left: 0;
     }
-
     .inputGroup>input:last-child {
         margin-top: auto;
     }

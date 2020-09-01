@@ -73,13 +73,17 @@ const Contact = () => {
                 <p className={cx('heading')}>Drop Me a Note</p>
                 <form onSubmit={onFormSubmit}>
                     <div className={cx(styles.inputGroup)}>
-                        <input required name="firstname" type="text" placeholder="First Name" value={firstName} onChange={onFieldChange} />
-                        <input required name="lastname" type="text" placeholder="Last Name" value={lastName} onChange={onFieldChange} />
+                        <label for="firstname" className={cx(styles.srOnly)}>First Name</label>
+                        <input className={cx(styles.firstname)} required name="firstname" id="firstname" type="text" placeholder="First Name" value={firstName} onChange={onFieldChange} />
+                        <label for="lastname" className={cx(styles.srOnly)}>Last Name</label>
+                        <input required name="lastname" id="lastname" type="text" placeholder="Last Name" value={lastName} onChange={onFieldChange} />
                     </div>
                     <div className={cx(styles.emailContainer)}>
-                        <input required name="subject" type="text" placeholder="Subject" value={subject} onChange={onFieldChange} />
+                        <label for="subject" className={cx(styles.srOnly)}>Subject</label>
+                        <input required name="subject" type="text" id="subject" placeholder="Subject" value={subject} onChange={onFieldChange} />
                     </div>
-                    <textarea required name="description" placeholder="description" value={description} onChange={onFieldChange} ></textarea>
+                    <label for="description" className={cx(styles.srOnly)}>Description</label>
+                    <textarea required name="description" id="description" placeholder="description" value={description} onChange={onFieldChange} ></textarea>
                     <div>
                         <button type="submit">Submit</button>
                     </div>
