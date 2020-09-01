@@ -4,8 +4,10 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import moment from 'moment';
 
 import styles from './career.css';
+import globalStyles from '../App.css';
 
 const cx = classNames.bind(styles);
+const cxg = classNames.bind(globalStyles);
 
 const Career = () => {
     return (
@@ -41,7 +43,7 @@ const Career = () => {
                     </ul>
                 </div>
                 <div className={cx(styles.centerContent)}>
-                    <button>Download Text Resume</button>
+                    <a className={cxg(globalStyles.button)} href="./downloads/Resume.pdf" download>Download Text Resume</a>
                 </div>
             </div>
         </ScrollAnimation>
