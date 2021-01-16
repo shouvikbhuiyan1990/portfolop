@@ -20,7 +20,7 @@ const Skills = () => {
             }
         };
         fetchArticles();
-    });
+    }, []);
 
     return (
         <ScrollAnimation animateIn="fadeIn">
