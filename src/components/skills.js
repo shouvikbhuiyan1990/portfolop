@@ -14,7 +14,7 @@ const Skills = () => {
 
     useEffect(() => {
         const fetchArticles = async () => {
-            let rss = await parser.parseURL(CORS_PROXY + 'https://medium.com/feed/@shouvikbhuiyan1990');
+            let rss = await parser.parseURL(CORS_PROXY + 'https://medium.com/feed/@shouvikbhuiyan');
             if (rss && rss.items && rss.items.length > 0) {
                 setArticles(rss.items)
             }
