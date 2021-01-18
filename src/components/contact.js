@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import classNames from 'classnames/bind';
 import ScrollAnimation from 'react-animate-on-scroll';
+import ReactGA from 'react-ga';
 
 import styles from './contact.css';
 
@@ -11,35 +12,6 @@ const Contact = () => {
     const [lastName, setLastName] = useState('');
     const [description, setDescription] = useState('');
     const [subject, setSubject] = useState('');
-
-    // const validationObject = {
-    //     "firstname": {
-    //         "isRequired": true,
-    //         "message": {
-    //             "isRequired": "Please Enter First Name"
-    //         }
-    //     },
-    //     "lastname": {
-    //         "isRequired": true,
-    //         "message": {
-    //             "isRequired": "Please Enter Last Name"
-    //         }
-    //     },
-    //     "subject": {
-    //         "isRequired": true,
-    //         "message": {
-    //             "isRequired": "Subject Can't be Empty"
-    //         }
-    //     },
-    //     "description": {
-    //         "isRequired": true,
-    //         "minLength": 10,
-    //         "message": {
-    //             "isRequired": "Description Can't be Empty",
-    //             "minLength": "Enter more words"
-    //         }
-    //     }
-    // };
 
     const onFieldChange = (event) => {
         // validationObject[event.target.name].
@@ -63,6 +35,10 @@ const Contact = () => {
 
     const onFormSubmit = (e) => {
         e.preventDefault();
+        ReactGA.event({
+            category: 'Contact Me',
+            action: 'Trying to send an email'
+        });
         const mailBody = `Message From ${firstName} ${lastName}, ${description}`;
         window.location.href = `mailto:shouvikbhuiyan1990@gmail.com?subject=${subject}&body=${mailBody}`;
     };

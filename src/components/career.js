@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames/bind';
 import ScrollAnimation from 'react-animate-on-scroll';
 import moment from 'moment';
+import ReactGA from 'react-ga';
 
 import styles from './career.css';
 import globalStyles from '../App.css';
@@ -43,10 +44,18 @@ const Career = () => {
                     </ul>
                 </div>
                 <div className={cx(styles.centerContent)}>
-                    <a className={cxg(globalStyles.button)} href="./downloads/Resume.pdf" download>Download Text Resume</a>
+                    <a onclick={() => ReactGA.event({
+                        category: 'Download Resume',
+                        action: 'Trying to Download Resume'
+                    })}
+                        className={cxg(globalStyles.button)}
+                        href="./downloads/Resume.pdf"
+                        download>
+                        Download Text Resume
+                    </a>
                 </div>
             </div>
-        </ScrollAnimation>
+        </ScrollAnimation >
     );
 };
 

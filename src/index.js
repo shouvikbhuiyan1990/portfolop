@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import ReactGA from 'react-ga';
+ReactGA.initialize('G-WH910J2PKT', {
+  debug: true,
+  gaOptions: {
+    siteSpeedSampleRate: 100
+  }
+});
 
 ReactDOM.render(
   <React.StrictMode>
