@@ -1,22 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Parser from 'rss-parser';
+import axios from 'axios';
 
 import styles from './skills.css';
 
 const cx = classNames.bind(styles);
-const parser = new Parser();
-const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"; //this is a workaround for cors error avoid
 
 const Skills = () => {
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {
         const fetchArticles = async () => {
-            let rss = await parser.parseURL(CORS_PROXY + 'https://medium.com/feed/@shouvikbhuiyan');
-            if (rss && rss.items && rss.items.length > 0) {
-                setArticles(rss.items)
+            let { data } = await axios(' https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40shouvikbhuiyan');
+            if (data && data.items && data.items.length > 0) {
+                setArticles(data.items)
             }
         };
         fetchArticles();

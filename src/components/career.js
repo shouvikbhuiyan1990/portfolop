@@ -19,7 +19,11 @@ const Career = () => {
                     <ul>
                         <li>
                             <span>{moment().year()}</span>
-                            <span className={cx(styles.companyName)}>Publicis Sapient (Contd.)</span>
+                            <span className={cx(styles.companyName)}>Lowes (Contd.)</span>
+                        </li>
+                        <li>
+                            <span>2021</span>
+                            <span className={cx(styles.companyName)}>Lowes</span>
                         </li>
                         <li>
                             <span>2018</span>
